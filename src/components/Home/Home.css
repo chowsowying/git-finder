@@ -1,0 +1,140 @@
+.search-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10rem;
+}
+
+.search-header {
+  width: 60%;
+  position: sticky;
+  top: 0rem;
+  background: var(--dark-blue);
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.search-form input {
+  width: 80%;
+  background: var(--blue);
+  color: var(--white);
+  padding: 1rem;
+  border-radius: 0.7rem;
+}
+
+.search-form button {
+  background: var(--light-blue);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 0.7rem;
+  width: 20%;
+}
+
+.search-form button:hover {
+  background: var(--white);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.more-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--white);
+  background-color: var(--light-blue);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  margin-right: 1rem;
+}
+
+.page-btn:hover {
+  background: transparent;
+  border: 1px solid var(--light-blue);
+  color: var(--light-blue);
+}
+
+.more-options select {
+  background: var(--white);
+  color: var(--black);
+  padding: 1rem;
+  border-radius: 0.7rem;
+  border: none;
+  outline: none;
+  margin: 1rem;
+}
+
+.search-results {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  width: 60%;
+}
+
+.user {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  background: var(--blue);
+  border-radius: 0.7rem;
+}
+
+.user-image {
+  width: 30%;
+}
+.user-image img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.user-info small {
+  margin-bottom: 1rem;
+}
+
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+  .search-header {
+    width: 86%;
+  }
+  .search-results {
+    width: 86%;
+  }
+  .user-info {
+    margin-top: 0rem;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+  .search-header {
+    width: 100%;
+  }
+  .search-results {
+    width: 100%;
+    grid-template-columns: 1fr;
+  }
+  .user-info {
+    text-align: center;
+  }
+}

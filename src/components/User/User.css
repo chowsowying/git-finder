@@ -1,0 +1,116 @@
+.user-container {
+  margin-top: 2rem;
+}
+
+.user-details {
+  margin-top: 2rem;
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 2rem;
+}
+
+.user-image {
+  width: 20rem;
+}
+
+.user-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 2rem;
+}
+
+.user-data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.data-icon {
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+}
+.user-content h3,
+.user-data p {
+  margin-bottom: 1rem;
+}
+
+.user-data a {
+  margin-top: 1rem;
+}
+
+.user-repos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  font-size: 1.6rem;
+  margin-top: 2rem;
+}
+.repo {
+  background: var(--blue);
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+
+.repo p,
+.repo h3 {
+  margin-bottom: 1rem;
+  display: flex;
+}
+
+.repo-desc {
+  color: var(--gray);
+}
+
+.repo-data {
+  display: flex;
+  justify-content: space-between;
+  color: var(--gray);
+  font-weight: bold;
+}
+
+.repo-icon {
+  margin-right: 1rem;
+  margin-top: 0.4rem;
+}
+
+.repo-link {
+  color: var(--light-blue);
+}
+
+.repo-link:hover {
+  color: var(--white);
+}
+/* ==================== MEDIA QUERIES (MEDIUM DEVICES) ==================== */
+@media screen and (max-width: 1024px) {
+  .user-repos {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+  .user-image {
+    margin-bottom: 2rem;
+    width: 25rem;
+  }
+}
+
+/* ==================== MEDIA QUERIES (SMALL DEVICES) ==================== */
+@media screen and (max-width: 600px) {
+  .user-repos {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .user-details {
+    flex-direction: column;
+    text-align: center;
+  }
+  .user-image {
+    width: 100%;
+    margin-bottom: 2rem;
+    margin-right: 0rem;
+  }
+}
